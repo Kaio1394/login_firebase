@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533894735215",
+    "project_id": "login-502f8",
+    "storage_bucket": "login-502f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533894735215:android:9e9a2e5ff174b95dcfb49a",
+        "android_client_info": {
+          "package_name": "br.com.kaio.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533894735215-trgjpqp3su017k9jjonbq29it8snef24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4mJVG2V17xwQhkZMSFCsTm0Iz1_2PM-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533894735215-trgjpqp3su017k9jjonbq29it8snef24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
