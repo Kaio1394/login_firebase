@@ -19,6 +19,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.blue,
       body: Center(
         child: SizedBox(
@@ -40,11 +41,12 @@ class _MyAppState extends State<MyApp> {
                     padding: EdgeInsets.fromLTRB(50.0, 1.0, 50.0, 1.0),
                     child: TextFormField(
                       validator: (input){
-                        if(input.isEmpty){
-                          return ;
+                        if(input.isEmpty || !input.contains('@')){
+                          return 'Invalid e-mail';
                         }
+                        return null;
                       },
-                      onSaved: (input) => _email = input,
+                      onChanged: (input) => _email = input,
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         labelText: "E-mail",
@@ -65,8 +67,9 @@ class _MyAppState extends State<MyApp> {
                         if(input.length < 6){
                           return 'Your password needs to be atleast 6 characters';
                         }
+                        return null;
                       },
-                      onSaved: (input) => _password = input,
+                      onChanged: (input) => _password = input,
                       obscureText: true,
                       decoration: const InputDecoration(
                           labelText: "Password",
@@ -139,9 +142,6 @@ class _MyAppState extends State<MyApp> {
       
     );
   }
-  Widget MyAwessomeApp(){}
-
-  Widget SomethinsErr(){}
 
   Future<void> sigIn() async{
     final formState = _formKey.currentState;
